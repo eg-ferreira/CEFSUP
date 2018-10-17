@@ -1,0 +1,69 @@
+//SRTIDMS JOB (PRD),'EDSON',CLASS=A,MSGCLASS=T,MSGLEVEL=(1,1),          00010000
+//         REGION=8192K                                                 00020098
+//STP01    EXEC PGM=SORT                                                00030099
+//SYSOUT   DD   SYSOUT=*                                                00040099
+//SORTIN   DD   DSN=PRD.MZ.BQA1.ERROSAPI.H0ACICPA,DISP=(SHR)            00050099
+//SORTOUT  DD   DSN=PRD.MZ.BZX0.H0ACICPA.LOGAPI.D0911,                  00070099
+//         DISP=(,CATLG,DELETE),                                        00080099
+//         UNIT=3390,SPACE=(CYL,(50,5),RLSE),                           00090099
+//         DCB=*.SORTIN                                                 00100099
+//SYSIN    DD   *                                                       00110099
+  SORT FIELDS=(5,7,CH,D,13,7,CH,A)                                      00120099
+  INCLUDE COND=(5,7,CH,EQ,C'0114254')                                   00130099
+//*                                                                     00130299
+//STP02    EXEC PGM=SORT                                                00130399
+//SYSOUT   DD   SYSOUT=*                                                00130499
+//SORTIN   DD   DSN=PRD.MZ.BQA1.ERROSAPI.H0ACICPC,DISP=(SHR)            00130599
+//SORTOUT  DD   DSN=PRD.MZ.BZX0.H0ACICPC.LOGAPI.D0911,                  00130699
+//         DISP=(,CATLG,DELETE),                                        00130799
+//         UNIT=3390,SPACE=(CYL,(50,5),RLSE),                           00130899
+//         DCB=*.SORTIN                                                 00130999
+//SYSIN    DD   *                                                       00131099
+  SORT FIELDS=(5,7,CH,D,13,7,CH,A)                                      00131199
+  INCLUDE COND=(5,7,CH,EQ,C'0114254')                                   00131299
+//*                                                                     00132099
+//STP03    EXEC PGM=SORT                                                00133099
+//SYSOUT   DD   SYSOUT=*                                                00134099
+//SORTIN   DD   DSN=PRD.MZ.BQA1.ERROSAPI.H0ACICPD,DISP=(SHR)            00135099
+//SORTOUT  DD   DSN=PRD.MZ.BZX0.H0ACICPD.LOGAPI.D0911,                  00136099
+//         DISP=(,CATLG,DELETE),                                        00137099
+//         UNIT=3390,SPACE=(CYL,(50,5),RLSE),                           00138099
+//         DCB=*.SORTIN                                                 00139099
+//SYSIN    DD   *                                                       00140099
+  SORT FIELDS=(5,7,CH,D,13,7,CH,A)                                      00150099
+  INCLUDE COND=(5,7,CH,EQ,C'0114254')                                   00160099
+//*                                                                     00170099
+//STP04    EXEC PGM=SORT                                                00190099
+//SYSOUT   DD   SYSOUT=*                                                00200099
+//SORTIN   DD   DSN=PRD.MZ.BQA1.ERROSAPI.H0ACICPU,DISP=(SHR)            00210099
+//SORTOUT  DD   DSN=PRD.MZ.BZX0.H0ACICPU.LOGAPI.D0911,                  00220099
+//         DISP=(,CATLG,DELETE),                                        00230099
+//         UNIT=3390,SPACE=(CYL,(50,5),RLSE),                           00240099
+//         DCB=*.SORTIN                                                 00250099
+//SYSIN    DD   *                                                       00260099
+  SORT FIELDS=(5,7,CH,D,13,7,CH,A)                                      00270099
+  INCLUDE COND=(5,7,CH,EQ,C'0114254')                                   00280099
+//*                                                                     00290097
+//STP05    EXEC PGM=SORT                                                00300099
+//SYSOUT   DD   SYSOUT=*                                                00310099
+//SORTIN   DD   DSN=PRD.MZ.BQA1.ERROSAPI.H0ACICPW,DISP=(SHR)            00320099
+//SORTOUT  DD   DSN=PRD.MZ.BZX0.H0ACICPW.LOGAPI.D0911,                  00330099
+//         DISP=(,CATLG,DELETE),                                        00340099
+//         UNIT=3390,SPACE=(CYL,(50,5),RLSE),                           00350099
+//         DCB=*.SORTIN                                                 00360099
+//SYSIN    DD   *                                                       00370099
+  SORT FIELDS=(5,7,CH,D,13,7,CH,A)                                      00380099
+  INCLUDE COND=(5,7,CH,EQ,C'0114254')                                   00390099
+//*                                                                     00400097
+//STP06    EXEC PGM=SORT                                                00410099
+//SYSOUT   DD   SYSOUT=*                                                00420099
+//SORTIN   DD   DSN=PRD.MZ.BQA1.ERROSAPI.H0ACICPY,DISP=(SHR)            00430099
+//SORTOUT  DD   DSN=PRD.MZ.BZX0.H0ACICPY.LOGAPI.D0911,                  00440099
+//         DISP=(,CATLG,DELETE),                                        00450099
+//         UNIT=3390,SPACE=(CYL,(50,5),RLSE),                           00460099
+//         DCB=*.SORTIN                                                 00470099
+//SYSIN    DD   *                                                       00480099
+  SORT FIELDS=(5,7,CH,D,13,7,CH,A)                                      00490099
+  INCLUDE COND=(5,7,CH,EQ,C'0114254')                                   00500099
+//*                                                                     00510097
+

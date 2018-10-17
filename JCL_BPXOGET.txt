@@ -1,0 +1,12 @@
+//IKJEFT01 JOB (SIST,P-T),'Edson',MSGCLASS=T,         
+//       CLASS=A,NOTIFY=&SYSUID,MSGLEVEL=(1,1)                      
+//*                                                                 
+//*                                                                 
+//       EXEC PGM=IKJEFT01                                          
+//SYSTERM DD SYSOUT=*                                               
+//SYSTSPRT DD SYSOUT=*                                              
+//SYSUDUMP DD SYSOUT=*                                              
+//SYSTSIN DD *                                                      
+OGET '/u/c079202/EADELETAR' -                                       
+  'TSOP1.P688035.EADELETA' TEXT                                     
+
