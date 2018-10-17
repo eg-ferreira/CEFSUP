@@ -1,0 +1,94 @@
+1CSQ4SUTL V1.6 - Starting
+0------------------------------------
+0  Program called with 5 arguments
+
+1  Parameters for this run are:
+   ------------------------------------------
+     NON-DELETION test Run
+     Message removal is by Duplicate Channel Details,
+       XMITQ, Channel Name AND Connection Name
+0  ---------------------------------------------------
+
+1  Starting Data Collection
+   ---------------------------------------------------
+   MQCONN to BRD7
+   MQOPEN - 'SYSTEM.CHANNEL.SYNCQ'
+
+   MQCLOSE
+
+   Data Collection Complete
+   ---------------------------------------------------
+
+1  *** Performing IN-DOUBT Resolution ***
+
+1  *** TESTING Message Removal Processing ****
+   ---------------------------------------------------
+
+   MQOPEN - 'SYSTEM.CHANNEL.SYNCQ'
+
+   MQGET of message number 35
+ ****Message descriptor****
+0  StrucId  : 'MD  '  Version : 1
+   Report   : 0  MsgType : 8
+   Expiry   : -1  Feedback : 0
+   Encoding : 785  CodedCharSetId : 500
+   Format : '        '
+   Priority : 5  Persistence : 1
+   MsgId : X'000000090000000000000000000000000000000000000000'
+   CorrelId : X'000000000000000000000000000000000000000000000000'
+   BackoutCount : 0
+   ReplyToQ       : '                                                '
+   ReplyToQMgr    : 'BRD7                                            '
+   ** Identity Context
+   UserIdentifier : 'SMQBRD7C    '
+   AccountingToken :
+    X'0000000000000000000000000000000000000000000000000000000000000000'
+   ApplIdentityData : '                                '
+   ** Origin Context
+   PutApplType    : '2'
+   PutApplName    : 'BRD7CHIN                    '
+   PutDate  : '20181006'    PutTime  : '16473953'
+   ApplOriginData : '    '
+0
+ ****   Message      ****
+
+  length - 452 bytes
+
+ 00000000:  E2D7 D8E2 C4C1 4BE7 D4C9 E34B D8E4 C5E4 'SPQSDA.XMIT.QUEU'
+ 00000010:  C540 4040 4040 4040 4040 4040 4040 4040 'E               '
+ 00000020:  4040 4040 4040 4040 4040 4040 4040 4040 '                '
+ 00000030:  C2D9 C4F7 4BE3 D64B E2D7 C4F7 4040 4040 'BRD7.TO.SPD7    '
+ 00000040:  4040 4040 E2D7 C4F9 4040 4040 4040 4040 '    SPD9        '
+ 00000050:  4040 4040 4040 4040 4040 4040 4040 4040 '                '
+ 00000060:  4040 4040 4040 4040 4040 4040 4040 4040 '                '
+ 00000070:  4040 4040 4040 4040 4040 4040 4040 4040 '                '
+ 00000080:  4040 4040 4040 4040 4040 4040 4040 4040 '                '
+ 00000090:  4040 4040 4040 4040 4040 4040 4040 4040 '                '
+ 000000A0:  4040 4040 4040 4040 4040 4040 4040 4040 '                '
+ 000000B0:  4040 4040 4040 4040 4040 4040 4040 4040 '                '
+ 000000C0:  4040 4040 4040 4040 4040 4040 4040 4040 '                '
+ 000000D0:  4040 4040 4040 4040 4040 4040 4040 4040 '                '
+ 000000E0:  4040 4040 4040 4040 4040 4040 4040 4040 '                '
+ 000000F0:  4040 4040 4040 4040 4040 4040 4040 4040 '                '
+ 00000100:  4040 4040 4040 4040 4040 4040 4040 4040 '                '
+ 00000110:  4040 4040 4040 4040 4040 4040 4040 4040 '                '
+ 00000120:  4040 4040 4040 4040 4040 4040 4040 4040 '                '
+ 00000130:  4040 4040 4040 4040 4040 4040 4040 4040 '                '
+ 00000140:  4040 4040 4040 4040 4040 4040 0000 0008 '            ....'
+ 00000150:  0000 0002 E800 01AC 0119 1B75 D50A 26E1 '....Y.......N...'
+ 00000160:  C8AD 0C90 0000 0001 0119 1B77 D50A 26E1 'HÝ..........N...'
+ 00000170:  C9C1 0690 0000 0001 550A 26E1 00D8 BE32 'IA...........Q..'
+ 00000180:  24F6 38CC 1412 5998 00B7 8249 5507 6E4F '.6.....q..b...>|'
+ 00000190:  012C 612C 00B7 8322 3B9A C9FF 0000 000A '../...c...I.....'
+ 000001A0:  0000 0200 2D90 AA38 0000 0018 C3E2 D840 '............CSQ '
+ 000001B0:  C2D9 C4F7 4040 4040 4040 4040 D50A 26E1 'BRD7        N...'
+ 000001C0:  C9E2 C2C8                               'ISBH            '
+0
+
+  No more messages
+   MQCLOSE
+   MQDISC
+   Number of Duplicate messages removed = 1
+0
+1CSQ4SUTL Run Complete
+
